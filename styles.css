@@ -245,10 +245,10 @@ body{
 }
 
 .title-class > h1 > a{
-    color: rgb(149, 200, 68);
+    color: #95c844;
 }
 
-.paragraph0, .paragraph1{
+.paragraph0{
     margin: 0 0 0 75px;
 }
 
@@ -264,4 +264,8 @@ aside{
 
 a{
     text-decoration: none;
+}
+
+.claseee{
+    
 }
