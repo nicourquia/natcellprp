@@ -245,10 +245,10 @@ body{
 }
 
 .title-class > h1 > a{
-    color: rgb(149, 200, 68);
+    color: #95c844;
 }
 
-.paragraph0, .paragraph1{
+.paragraph0{
     margin: 0 0 0 75px;
 }
 
@@ -265,3 +265,56 @@ aside{
 a{
     text-decoration: none;
 }
+
+.paragraph0{
+    background: #fff; /* color de fondo */
+    color: #95c844; /* color de fuente */
+    border: 2px solid #95c844; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .paragraph0:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .paragraph0::after {
+    content: "";
+    background: #95c844; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .paragraph0:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
+  }
+
+  .listContainer > li {
+    opacity: 0;
+    animation: show 800ms linear forwards;
+    }
+    @keyframes show {
+    to {
+    opacity: 1;
+    }
+    }
+
+iframe {
+    opacity: 0;
+    animation: show 5000ms linear forwards;
+    }
+    @keyframes show {
+    to {
+    opacity: 1;
+    }
+    }
