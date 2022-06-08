@@ -7,7 +7,7 @@
 
 body{
     background-color: white(149, 200, 68);
-    font-family: 'Roboto', Helvetica, sans-serif;    
+    font-family: 'Roboto', Helvetica, sans-serif !important;    
 }
 
 @media screen and (max-width: 1023px){
@@ -321,4 +321,24 @@ iframe {
 
 .nav-bs-class{
     background-color: #95c844;
+}
+
+.aside-bs-class{
+    background-color: #95c844;
+    height: 30rem;
+}
+
+.img-aside-bs-class{
+    background-color: white;
+    max-width: 75%;
+}
+
+.btn-bs-class{
+    background-color: #1f5b1c;
+    color: white;
+}
+
+.btn-bs-class:hover{
+    background-color: #2f6e2c;
+    color: white;
 }
