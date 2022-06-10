@@ -1,0 +1,36 @@
+h1{
+    margin-top: 2rem;
+}
+
+div.container{
+    display: flex;
+    justify-content: center;
+    div{
+        text-align: center;
+        width: 250px;
+        margin: 50px;
+        img{
+            width: 200px;
+            border-radius: 50%;
+            &:hover{
+                transition: all 0.5s;
+                transform: scale(1.10);
+            }
+        }
+    }
+}
+
+div.historia{
+    text-align: center;
+    div{
+        display: inline-block;
+        p{
+            width: 600px;
+        }
+        &:hover{
+            transition: all 0.5s;
+            transform: scale(1.10);
+        }
+    }
+    margin-bottom: 40px;
+}
