@@ -1,0 +1,82 @@
+$primary-color: #95c844;
+
+$redes:(
+    instagram: #c766ff,
+    facebook:#3052ce,
+    whatsapp:#6bb039,
+);
+
+$subtitles:(
+    subrayado: 2px solid $primary-color,
+    centro: center,
+    fuente-size: 25px,
+    margen: 5px,
+    relleno: 5px,
+);
+
+.father-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .text-container{
+        h3{
+            border-bottom: map-get($subtitles, subrayado);
+            text-align: map-get($subtitles, centro);
+            font-size: map-get($subtitles, fuente-size);
+            margin-bottom: map-get($subtitles, margen);
+            padding-bottom: map-get($subtitles, relleno);
+        }
+        width: 600px;
+        margin: 20px 0;
+        ul{
+            margin-left: 40px;
+        }
+    }
+}
+
+@each $red, $color in $redes{
+    .img--#{$red}{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $color;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.button-style{
+    width: 100px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: #3052ce;
+}
+
+@mixin sizes($width, $heigth, $font-s){
+    width: $width;
+    height: $heigth;
+    font-size: $font-s
+}
+
+
+.button-turno{
+    @extend .button-style;
+    background-color: $primary-color;
+    border: 5px solid #ffffff73;
+    border-radius: 5px;
+    @include sizes(150px, 50px, 20px)
+}
+
+@mixin flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons-container{
+    width: 500px;
+    @include flex-space-around;
+}

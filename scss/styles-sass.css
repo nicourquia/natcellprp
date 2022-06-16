@@ -73,6 +73,60 @@ footer {
     footer div img {
       width: 200px; }
 
+.father-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .father-container .text-container {
+    width: 600px;
+    margin: 20px 0; }
+    .father-container .text-container h3 {
+      border-bottom: 2px solid #95c844;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 5px;
+      padding-bottom: 5px; }
+    .father-container .text-container ul {
+      margin-left: 40px; }
+
+.img--instagram {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #c766ff; }
+
+.img--facebook {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #3052ce; }
+
+.img--whatsapp {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #6bb039; }
+
+a {
+  text-decoration: none; }
+
+.button-style, .button-turno {
+  width: 100px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  border: none;
+  color: white;
+  background-color: #3052ce; }
+
+.button-turno {
+  background-color: #95c844;
+  border: 5px solid #ffffff73;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px; }
+
+.buttons-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0; }
