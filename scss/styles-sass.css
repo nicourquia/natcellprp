@@ -226,6 +226,38 @@ a {
       .section-contacto div a img {
         width: 2rem; }
 
+.section-blog {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-blog .box-container {
+    display: flex;
+    max-width: 50%;
+    margin-bottom: 2rem; }
+    .section-blog .box-container img {
+      width: 250px; }
+    .section-blog .box-container div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .section-blog .box-container div p {
+        margin: 1rem; }
+      .section-blog .box-container div a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #557128;
+        width: 100px;
+        height: 30px;
+        color: white; }
+        .section-blog .box-container div a:hover {
+          color: white;
+          background-color: #95c844;
+          transform: translateY(-0.25em); }
+
 * {
   margin: 0;
   padding: 0; }
