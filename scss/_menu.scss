@@ -1,36 +1,119 @@
 $primary-color: #95c844;
 $secondary-color: #557128;
 
-header{
-    nav{
-        height: 60px;
-        background-color:#95c844;
-        text-align: center;
-        ul{
-            list-style: none;
-            display: inline-block;
-            padding:10px;
-            li{
-                float: left;
-                a{
-                    color: white;
-                    font-size: 30px;
-                    text-decoration: none;
-                    padding:18px;
-                    button{
-                        width: 100px;
-                        height: 30px;
-                        border-radius: 5px;
-                        background-color: white;
-                        border: none;
-                        color: $primary-color;
-                        font-family: 'Roboto';
-                        font-weight: 500;
-                        font-size: 15px;
-                        &:hover {
-                            color: white;
-                            background-color: $secondary-color;
-                            transform: translateY(-0.25em);
+@media screen and (min-width: 200px) and (max-width: 560px){
+    header{
+        nav{
+            background-color:#95c844;
+            text-align: center;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding:10px;
+                li{
+                    float: left;
+                    margin: 0.5rem 0 0.5rem 0;
+                    a{
+                        color: white;
+                        font-size: 3rem;
+                        text-decoration: none;
+                        padding:18px;
+                        button{
+                            width: 20rem;
+                            height: 4rem;
+                            border-radius: 5px;
+                            background-color: white;
+                            border: none;
+                            color: $primary-color;
+                            font-family: 'Roboto';
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            &:hover {
+                                color: white;
+                                background-color: $secondary-color;
+                                transform: translateY(-0.25em);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 561px) and (max-width: 1023px){
+    header{
+        nav{
+            background-color:#95c844;
+            text-align: center;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding:10px;
+                li{
+                    float: left;
+                    margin: 0.5rem 0 0.5rem 0;
+                    a{
+                        color: white;
+                        font-size: 3rem;
+                        text-decoration: none;
+                        padding:18px;
+                        button{
+                            width: 30rem;
+                            height: 4rem;
+                            border-radius: 5px;
+                            background-color: white;
+                            border: none;
+                            color: $primary-color;
+                            font-family: 'Roboto';
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            &:hover {
+                                color: white;
+                                background-color: $secondary-color;
+                                transform: translateY(-0.25em);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    header{
+        nav{
+            height: 60px;
+            background-color:#95c844;
+            text-align: center;
+            ul{
+                list-style: none;
+                display: inline-block;
+                padding:10px;
+                li{
+                    float: left;
+                    a{
+                        color: white;
+                        font-size: 30px;
+                        text-decoration: none;
+                        padding:18px;
+                        button{
+                            width: 100px;
+                            height: 30px;
+                            border-radius: 5px;
+                            background-color: white;
+                            border: none;
+                            color: $primary-color;
+                            font-family: 'Roboto';
+                            font-weight: 500;
+                            font-size: 15px;
+                            &:hover {
+                                color: white;
+                                background-color: $secondary-color;
+                                transform: translateY(-0.25em);
+                            }
                         }
                     }
                 }
