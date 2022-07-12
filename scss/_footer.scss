@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 200px) and (max-width: 560px){
+@media screen and (min-width: 200px) and (max-width: 650px){
     footer{
         display: flex;
         flex-direction: column;
@@ -30,7 +30,7 @@
     }
 }
 
-@media screen and (min-width: 561px) and (max-width: 1023px){
+@media screen and (min-width: 651px) and (max-width: 1023px){
     footer{
         display: flex;
         flex-direction: column;
@@ -55,7 +55,7 @@
         }
         iframe{
             margin-top: 7rem;
-            width: auto;
+            width: 70%;
             height: 25rem;
         }
     }
