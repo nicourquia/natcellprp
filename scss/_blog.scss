@@ -1,41 +1,135 @@
 $primary-color: #95c844;
 $secondary-color: #557128;
 
-.section-blog{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .box-container{
+@media screen and (min-width: 200px) and (max-width: 560px){
+    .section-blog{
+        margin-top: 5rem;
         display: flex;
-        max-width: 50%;
-        margin-bottom: 2rem;
-        img{
-            width: 250px;
-        }
-        div{
+        flex-direction: column;
+        align-items: center;
+        .box-container{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                margin: 1rem;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            img{
+                width: 100%;
+                height: max-content;
             }
-            a{
+            div{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-radius: 5px;
-                background-color: $secondary-color;
-                width: 100px;
-                height: 30px;
-                color: white;
-                &:hover {
+                p{
+                    margin: 1rem;
+                    font-size: 2rem;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.8rem;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: $secondary-color;
+                    width: 60%;
+                    height: 4rem;
                     color: white;
-                    background-color: $primary-color;
-                    transform: translateY(-0.25em);
+                    &:hover {
+                        color: white;
+                        background-color: $primary-color;
+                        transform: translateY(-0.25em);
+                    }
                 }
             }
         }
     }
 }
+
+@media screen and (min-width: 561px) and (max-width: 1023px){
+    .section-blog{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box-container{
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+            margin-bottom: 2rem;
+            img{
+                width: 100%;
+                height: max-content;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    margin: 1rem;
+                    font-size: 1.5rem;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: $secondary-color;
+                    width: 40%;
+                    height: 3rem;
+                    color: white;
+                    &:hover {
+                        color: white;
+                        background-color: $primary-color;
+                        transform: translateY(-0.25em);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .section-blog{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box-container{
+            display: flex;
+            max-width: 50%;
+            margin-bottom: 2rem;
+            img{
+                width: 15rem;
+                height: max-content;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    margin: 1rem;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: $secondary-color;
+                    width: 100px;
+                    height: 30px;
+                    color: white;
+                    &:hover {
+                        color: white;
+                        background-color: $primary-color;
+                        transform: translateY(-0.25em);
+                    }
+                }
+            }
+        }
+    }
+}
+

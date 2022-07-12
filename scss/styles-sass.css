@@ -478,84 +478,274 @@ a {
       .dad-container .aside-container h6 {
         font-size: 1rem; } }
 
-.section-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .section-contacto h2 {
-    font-size: 1.5rem;
-    margin-top: 3rem; }
-  .section-contacto form {
-    display: flex;
-    flex-direction: column; }
-    .section-contacto form h3 {
-      margin: 2rem 0 2rem 0; }
-    .section-contacto form input {
-      margin: 1rem 0 1rem 0;
-      height: 2rem;
-      width: 20rem;
-      border-radius: 5px;
-      border-color: azure;
-      border-style: ridge; }
-    .section-contacto form button {
-      align-self: center;
-      width: 10rem;
-      height: 2rem;
-      margin: 1rem 0 1rem 0;
-      font-size: 1rem;
-      color: white;
-      background-color: #557128;
-      border: none;
-      border-radius: 5px; }
-      .section-contacto form button:hover {
-        color: white;
-        background-color: #95c844;
-        transform: translateY(-0.25em); }
-  .section-contacto div {
+@media screen and (min-width: 200px) and (max-width: 560px) {
+  .section-contacto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem; }
-    .section-contacto div h3 {
-      margin: 2rem 0 2rem 0;
-      font-size: 1.5rem; }
-    .section-contacto div a {
-      font-size: 1.5rem; }
-      .section-contacto div a img {
-        width: 2rem; }
-
-.section-blog {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .section-blog .box-container {
-    display: flex;
-    max-width: 50%;
-    margin-bottom: 2rem; }
-    .section-blog .box-container img {
-      width: 250px; }
-    .section-blog .box-container div {
+    align-items: center; }
+    .section-contacto h2 {
+      font-size: 2.5rem;
+      margin-top: 3rem; }
+    .section-contacto form {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .section-blog .box-container div p {
-        margin: 1rem; }
-      .section-blog .box-container div a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      width: 90%; }
+      .section-contacto form h3 {
+        margin: 2rem 0 2rem 0;
+        font-size: 2rem;
+        text-align: center; }
+      .section-contacto form label {
+        font-size: 1.5rem;
+        font-weight: 700; }
+      .section-contacto form input {
+        margin: 1rem 0 1rem 0;
+        height: 3rem;
+        width: 100%;
         border-radius: 5px;
+        border-color: azure;
+        border-style: ridge;
+        font-size: 1.5rem; }
+      .section-contacto form button {
+        align-self: center;
+        width: 30%;
+        height: 3rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 1.5rem;
+        color: white;
         background-color: #557128;
-        width: 100px;
-        height: 30px;
-        color: white; }
-        .section-blog .box-container div a:hover {
+        border: none;
+        border-radius: 5px; }
+        .section-contacto form button:hover {
           color: white;
           background-color: #95c844;
           transform: translateY(-0.25em); }
+    .section-contacto div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem; }
+      .section-contacto div h3 {
+        margin: 2rem 0 2rem 0;
+        font-size: 2rem; }
+      .section-contacto div a {
+        display: flex;
+        font-size: 2rem; }
+        .section-contacto div a img {
+          width: 2.5rem; } }
+
+@media screen and (min-width: 561px) and (max-width: 1023px) {
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-contacto h2 {
+      font-size: 2.5rem;
+      margin-top: 3rem; }
+    .section-contacto form {
+      display: flex;
+      flex-direction: column;
+      width: 90%; }
+      .section-contacto form h3 {
+        margin: 2rem 0 2rem 0;
+        font-size: 2rem;
+        text-align: center; }
+      .section-contacto form label {
+        font-size: 1.5rem;
+        font-weight: 700; }
+      .section-contacto form input {
+        margin: 1rem 0 1rem 0;
+        height: 3rem;
+        width: 100%;
+        border-radius: 5px;
+        border-color: azure;
+        border-style: ridge;
+        font-size: 1.5rem; }
+      .section-contacto form button {
+        align-self: center;
+        width: 30%;
+        height: 3rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #557128;
+        border: none;
+        border-radius: 5px; }
+        .section-contacto form button:hover {
+          color: white;
+          background-color: #95c844;
+          transform: translateY(-0.25em); }
+    .section-contacto div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem; }
+      .section-contacto div h3 {
+        margin: 2rem 0 2rem 0;
+        font-size: 2rem; }
+      .section-contacto div a {
+        display: flex;
+        font-size: 2rem; }
+        .section-contacto div a img {
+          width: 2.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-contacto h2 {
+      font-size: 1.5rem;
+      margin-top: 3rem; }
+    .section-contacto form {
+      display: flex;
+      flex-direction: column; }
+      .section-contacto form h3 {
+        margin: 2rem 0 2rem 0; }
+      .section-contacto form input {
+        margin: 1rem 0 1rem 0;
+        height: 2rem;
+        width: 20rem;
+        border-radius: 5px;
+        border-color: azure;
+        border-style: ridge; }
+      .section-contacto form button {
+        align-self: center;
+        width: 10rem;
+        height: 2rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
+        color: white;
+        background-color: #557128;
+        border: none;
+        border-radius: 5px; }
+        .section-contacto form button:hover {
+          color: white;
+          background-color: #95c844;
+          transform: translateY(-0.25em); }
+    .section-contacto div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem; }
+      .section-contacto div h3 {
+        margin: 2rem 0 2rem 0;
+        font-size: 1.5rem; }
+      .section-contacto div a {
+        display: flex;
+        font-size: 1.5rem; }
+        .section-contacto div a img {
+          width: 2rem; } }
+
+@media screen and (min-width: 200px) and (max-width: 560px) {
+  .section-blog {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-blog .box-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+      margin-bottom: 2rem; }
+      .section-blog .box-container img {
+        width: 100%;
+        height: max-content; }
+      .section-blog .box-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .section-blog .box-container div p {
+          margin: 1rem;
+          font-size: 2rem; }
+        .section-blog .box-container div a {
+          display: flex;
+          justify-content: center;
+          font-size: 1.8rem;
+          align-items: center;
+          border-radius: 5px;
+          background-color: #557128;
+          width: 60%;
+          height: 4rem;
+          color: white; }
+          .section-blog .box-container div a:hover {
+            color: white;
+            background-color: #95c844;
+            transform: translateY(-0.25em); } }
+
+@media screen and (min-width: 561px) and (max-width: 1023px) {
+  .section-blog {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-blog .box-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 70%;
+      margin-bottom: 2rem; }
+      .section-blog .box-container img {
+        width: 100%;
+        height: max-content; }
+      .section-blog .box-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .section-blog .box-container div p {
+          margin: 1rem;
+          font-size: 1.5rem; }
+        .section-blog .box-container div a {
+          display: flex;
+          justify-content: center;
+          font-size: 1.5rem;
+          align-items: center;
+          border-radius: 5px;
+          background-color: #557128;
+          width: 40%;
+          height: 3rem;
+          color: white; }
+          .section-blog .box-container div a:hover {
+            color: white;
+            background-color: #95c844;
+            transform: translateY(-0.25em); } }
+
+@media screen and (min-width: 1024px) {
+  .section-blog {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-blog .box-container {
+      display: flex;
+      max-width: 50%;
+      margin-bottom: 2rem; }
+      .section-blog .box-container img {
+        width: 15rem;
+        height: max-content; }
+      .section-blog .box-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .section-blog .box-container div p {
+          margin: 1rem; }
+        .section-blog .box-container div a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          background-color: #557128;
+          width: 100px;
+          height: 30px;
+          color: white; }
+          .section-blog .box-container div a:hover {
+            color: white;
+            background-color: #95c844;
+            transform: translateY(-0.25em); } }
 
 * {
   margin: 0;

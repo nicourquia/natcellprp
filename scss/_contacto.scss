@@ -7,29 +7,37 @@ $secondary-color: #557128;
         flex-direction: column;
         align-items: center;
         h2{
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             margin-top: 3rem;
         }
         form{
             display: flex;
             flex-direction: column;
+            width: 90%;
             h3{
                 margin: 2rem 0 2rem 0;
+                font-size: 2rem;
+                text-align: center;
+            }
+            label{
+                font-size: 1.5rem;
+                font-weight: 700;
             }
             input{
                 margin: 1rem 0 1rem 0;
-                height: 2rem;
-                width: 20rem;
+                height: 3rem;
+                width: 100%;
                 border-radius: 5px;
                 border-color: azure;
                 border-style: ridge;
+                font-size: 1.5rem;
             }
             button{
                 align-self: center;
-                width: 10rem;
-                height: 2rem;
+                width: 30%;
+                height: 3rem;
                 margin: 1rem 0 1rem 0;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 color: white;
                 background-color: $secondary-color;
                 border: none;
@@ -49,12 +57,13 @@ $secondary-color: #557128;
             margin-bottom: 3rem;
             h3{
                 margin: 2rem 0 2rem 0;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             a{
-                font-size: 1.5rem;
+                display: flex;
+                font-size: 2rem;
                 img{
-                    width: 2rem;
+                    width: 2.5rem;
                 }
             }
         }
@@ -67,29 +76,37 @@ $secondary-color: #557128;
         flex-direction: column;
         align-items: center;
         h2{
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             margin-top: 3rem;
         }
         form{
             display: flex;
             flex-direction: column;
+            width: 90%;
             h3{
                 margin: 2rem 0 2rem 0;
+                font-size: 2rem;
+                text-align: center;
+            }
+            label{
+                font-size: 1.5rem;
+                font-weight: 700;
             }
             input{
                 margin: 1rem 0 1rem 0;
-                height: 2rem;
-                width: 20rem;
+                height: 3rem;
+                width: 100%;
                 border-radius: 5px;
                 border-color: azure;
                 border-style: ridge;
+                font-size: 1.5rem;
             }
             button{
                 align-self: center;
-                width: 10rem;
-                height: 2rem;
+                width: 30%;
+                height: 3rem;
                 margin: 1rem 0 1rem 0;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 color: white;
                 background-color: $secondary-color;
                 border: none;
@@ -109,12 +126,13 @@ $secondary-color: #557128;
             margin-bottom: 3rem;
             h3{
                 margin: 2rem 0 2rem 0;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             a{
-                font-size: 1.5rem;
+                display: flex;
+                font-size: 2rem;
                 img{
-                    width: 2rem;
+                    width: 2.5rem;
                 }
             }
         }
@@ -172,6 +190,7 @@ $secondary-color: #557128;
                 font-size: 1.5rem;
             }
             a{
+                display: flex;
                 font-size: 1.5rem;
                 img{
                     width: 2rem;
@@ -179,5 +198,4 @@ $secondary-color: #557128;
             }
         }
     }
-
 }
