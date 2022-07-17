@@ -1,82 +1,144 @@
 $primary-color: #95c844;
+$secondary-color: #557128;
 
-$redes:(
-    instagram: #c766ff,
-    facebook:#3052ce,
-    whatsapp:#6bb039,
-);
-
-$subtitles:(
-    subrayado: 2px solid $primary-color,
-    centro: center,
-    fuente-size: 25px,
-    margen: 5px,
-    relleno: 5px,
-);
-
-.father-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .text-container{
-        h3{
-            border-bottom: map-get($subtitles, subrayado);
-            text-align: map-get($subtitles, centro);
-            font-size: map-get($subtitles, fuente-size);
-            margin-bottom: map-get($subtitles, margen);
-            padding-bottom: map-get($subtitles, relleno);
+@media screen and (min-width: 200px) and (max-width: 560px){
+    .tratamientos-title{
+        font-size: 3rem;
+    }
+    .father-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-container{
+            max-width: 90%;
+            font-size: 2rem;
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: $primary-color;
+            }
+            p{
+                margin: 1rem 0 1rem 0;
+            }
+            ul{
+                margin: 1rem 0rem 1rem 1rem;
+                li{
+                    align-self: center;
+                }
+            }
         }
-        width: 600px;
-        margin: 20px 0;
-        ul{
-            margin-left: 40px;
+        .buttons-container{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 2rem 0 2rem 0;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background-color: $secondary-color;
+                width: 15rem;
+                height: 5rem;
+                color: white;
+                font-size: 2rem;
+                text-decoration: none;
+                margin: 2rem 0 2rem 0;
+                &:hover {
+                    color: white;
+                    background-color: $primary-color;
+                    transform: translateY(-0.25em);
+                }
+            }
         }
     }
 }
 
-@each $red, $color in $redes{
-    .img--#{$red}{
-        padding-bottom: 5px;
-        border-bottom: 2px solid $color;
+@media screen and (min-width: 561px) and (max-width: 1023px){
+    .tratamientos-title{
+        font-size: 3rem;
+    }
+    .father-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-container{
+            max-width: 90%;
+            font-size: 2rem;
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: $primary-color;
+            }
+            p{
+                margin: 1rem 0 1rem 0;
+            }
+        }
+        .buttons-container{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 40rem;
+            margin: 2rem 0 2rem 0;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background-color: $secondary-color;
+                width: 15rem;
+                height: 5rem;
+                color: white;
+                font-size: 2rem;
+                text-decoration: none;
+                margin: 2rem 0 2rem 0;
+                &:hover {
+                    color: white;
+                    background-color: $primary-color;
+                    transform: translateY(-0.25em);
+                }
+            }
+        }
     }
 }
 
-a{
-    text-decoration: none;
-}
-
-.button-style{
-    width: 100px;
-    height: 40px;
-    font-family: 'Roboto';
-    font-size: 15px;
-    border: none;
-    color: white;
-    background-color: #3052ce;
-}
-
-@mixin sizes($width, $heigth, $font-s){
-    width: $width;
-    height: $heigth;
-    font-size: $font-s
-}
-
-
-.button-turno{
-    @extend .button-style;
-    background-color: $primary-color;
-    border: 5px solid #ffffff73;
-    border-radius: 5px;
-    @include sizes(150px, 50px, 20px)
-}
-
-@mixin flex-space-around{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.buttons-container{
-    width: 500px;
-    @include flex-space-around;
+@media screen and (min-width: 1024px){
+    .father-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-container{
+            max-width: 50%;
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: $primary-color;
+            }
+            p{
+                margin: 1rem 0 1rem 0;
+            }
+        }
+        .buttons-container{
+            display: flex;
+            justify-content: space-around;
+            width: 40rem;
+            margin: 2rem 0 2rem 0;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background-color: $secondary-color;
+                width: 100px;
+                height: 30px;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    color: white;
+                    background-color: $primary-color;
+                    transform: translateY(-0.25em);
+                }
+            }
+        }
+    }
 }
